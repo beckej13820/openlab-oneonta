@@ -9,3 +9,7 @@ License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html                 
 */
 
+/* Fix text outline on front page slider */
+.home-page .row-home-top .slider .camera_content h2, .home-page .row-home-top .slider .camera_content p {
+	text-shadow: 2px 2px 2px #000000;
+}
