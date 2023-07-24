@@ -120,7 +120,7 @@
 								/>
 							</div>
 
-							<div data-parsley-children-should-match class="form-group">
+							<div data-parsley-children-should-match class="form-group hide-random-password">
 								<label class="control-label" for="signup_password"><?php esc_html_e( 'Choose a Password', 'commons-in-a-box' ); ?> <?php esc_html_e( '(required)', 'commons-in-a-box' ); ?></label>
 								<?php do_action( 'bp_signup_password_errors' ); ?>
 								<div class="password-field">
