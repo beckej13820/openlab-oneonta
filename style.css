@@ -13,3 +13,9 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 .home-page .row-home-top .slider .camera_content h2, .home-page .row-home-top .slider .camera_content p {
 	text-shadow: 2px 2px 2px #000000;
 }
+
+/* important!!! Hide random passwords on register page */
+
+#basic-details-section > div.form-group.hide-random-password {
+	display: none; !important
+}
