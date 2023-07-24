@@ -17,5 +17,5 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 /* important!!! Hide random passwords on register page */
 
 #basic-details-section > div.form-group.hide-random-password {
-	display: none;
+	display: none; !important
 }
