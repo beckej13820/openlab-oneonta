@@ -28,7 +28,7 @@
 	}
 
 	$member_types = cboxol_get_member_types();
-
+	$random_password = wp_generate_password( 12, false, false );
 	?>
 
 	<div class="page" id="register-page">
@@ -124,13 +124,12 @@
 								<label class="control-label" for="signup_password"><?php esc_html_e( 'Choose a Password', 'commons-in-a-box' ); ?> <?php esc_html_e( '(required)', 'commons-in-a-box' ); ?></label>
 								<?php do_action( 'bp_signup_password_errors' ); ?>
 								<div class="password-field">
-									<?php $random_password = wp_generate_password( 12, false, false ); ?>
 									<input
 										class="form-control"
 										type="password"
 										name="signup_password"
 										id="signup_password"
-										value="<?php echo {$random_password} ?>"
+										value="<?php echo $random_password; ?>"
 										data-parsley-trigger="blur"
 										data-parsley-required
 										data-parsley-group="password"
@@ -148,7 +147,7 @@
 									type="password"
 									name="signup_password_confirm"
 									id="signup_password_confirm"
-									value="<?php echo {$random_password} ?>"
+									value="<?php echo $random_password; ?>"
 									data-parsley-trigger="blur"
 									data-parsley-required
 									data-parsley-group="password"
