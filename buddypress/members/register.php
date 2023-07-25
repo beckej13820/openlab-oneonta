@@ -81,7 +81,7 @@
 									data-parsley-remote="<?php echo esc_attr( $login_check_url ); ?>"
 									data-parsley-remote-message="<?php esc_attr_e( 'That username is already taken.', 'commons-in-a-box' ); ?>"
 								/>
-								<p class="register-field-note"><strong>IMPORTANT:</strong> You do not need to use your real name or your oneonta login as your username or handle. The username or handle you choose will be visible in the URL of your member profile and cannot be changed after signup.</p> 
+								<p class="register-field-note"><strong>IMPORTANT:</strong> You do not need to use your real name or your official school username as your OpenLab username or handle. The username or handle you choose will be visible in the URL of your member profile and cannot be changed after signup.</p> 
 							</div>
 
 							<div class="form-group">
