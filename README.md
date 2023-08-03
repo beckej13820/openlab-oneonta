@@ -13,3 +13,9 @@ The main purpose of this theme is use with a site that is connected to an instit
 * Disables fields on the OpenLab Edit Settings page to remove the ability to change passwords or email
 
  The expanding login form in the OpenLab Universal Header needs to be disabled using a mu-plugin. Recommend that you install https://github.com/beckej13820/disable-openlab-loginform into the mu-plugin folder.
+
+## A note on branches
+
+One of the purposes for sharing this child theme on github was to make it easier for future OpenLab admins to use this as a starting point. For that reason, the "main" branch uses only general language and focuses on the functional changes for implementing single sign on, and purposefully doesn't include an specific references to Oneonta or Oneonta specific styling.
+
+The "oneonta" branch differs from the main branch in that there may be additional cosmetic changes or Oneonta specific help text.
