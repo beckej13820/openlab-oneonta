@@ -37,6 +37,7 @@
 
 		<div class="entry-title">
 			<h1><?php esc_html_e( 'Create an Account', 'commons-in-a-box' ); ?></h1>
+			<p><?php printf( esc_html__( 'Registering for %s is easy. Just fill in the fields below and we\'ll get a new account set up for you in no time.', 'commons-in-a-box' ), esc_html( $site_name ) ); ?></p>
 		</div>
 
 		<form action="" name="signup_form" id="signup_form" class="standard-form form-panel" method="post" enctype="multipart/form-data" data-parsley-trigger="blur">
@@ -134,8 +135,7 @@
 						<?php do_action( 'template_notices' ); ?>
 
 						<?php // translators: site name ?>
-						<p><?php printf( esc_html__( 'Registering for %s is easy. Just fill in the fields below and we\'ll get a new account set up for you in no time.', 'commons-in-a-box' ), esc_html( $site_name ) ); ?></p>
-
+						
 						<?php do_action( 'bp_before_account_details_fields' ); ?>
 
 						<div class="register-section" id="basic-details-section">
