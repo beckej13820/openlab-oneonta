@@ -54,7 +54,7 @@
 
 						<div class="register-section" id="profile-details-section">
 
-							<p><?php esc_html_e( 'Your responses in the form fields below will be displayed on your profile page, which is open to the public. You can always add, edit, or remove information at a later date.', 'commons-in-a-box' ); ?></p>
+							<p><?php esc_html_e( 'Your responses in the form fields below will be displayed on your profile page, which is open to the public. You can always add, edit, or remove information at a later date except for the username field, which cannot be changed.', 'commons-in-a-box' ); ?></p>
 
 							<div class="form-group">
 								<label class="control-label" for="signup_username"><?php esc_html_e( 'Username', 'commons-in-a-box' ); ?> <?php esc_html_e( '(required)', 'commons-in-a-box' ); ?> <?php esc_html_e( '(lowercase & no special characters)', 'commons-in-a-box' ); ?></label>
