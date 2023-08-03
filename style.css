@@ -19,3 +19,14 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 #basic-details-section > div.form-group.hide-random-password {
 	display: none; !important
 }
+
+/* Disable Account Settings Page to remove password change and email change options */
+#settings-form #email {
+	pointer-events: none;
+	background-color: #eeeeee;
+	opacity: 1;
+ }
+ 
+ #settings-form > div.panel.panel-default > div.panel-body > div.form-group.settings-section.current-pw-section, #settings-form > div.panel.panel-default > div.panel-body > div.form-group.settings-section.change-pw-section, #settings-form > div.submit {
+	display: none;
+ }
