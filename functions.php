@@ -1,9 +1,9 @@
 <?php
 /* enqueue script for parent theme stylesheeet */        
 function openlab_oneonta_enqueue_styles() {
- 
+
  // enqueue style 
- wp_enqueue_style( 'child_style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory()) . '/style.css', false );                       
+ wp_enqueue_style( 'child_style', get_template_directory_uri() . '/style.css', array( 'main-styles' ), filemtime(get_template_directory()) . '/style.css', false );                       
 }
 
 function openlab_oneonta_enqueue_scripts() {
