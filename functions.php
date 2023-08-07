@@ -14,3 +14,4 @@ function openlab_oneonta_enqueue_scripts() {
 
    add_action( 'wp_enqueue_scripts', 'openlab_oneonta_enqueue_styles');
    add_action( 'wp_enqueue_scripts', 'openlab_oneonta_enqueue_scripts');
+?>
