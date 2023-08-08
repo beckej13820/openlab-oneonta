@@ -1,10 +1,18 @@
 <?php
 
-add_action( 'wp_enqueue_scripts', function() {
-	wp_enqueue_style( 'openlab-oneonta' , get_stylesheet_directory_uri() . '/style.css' );
-
-	wp_enqueue_script( 'openlab-oneonta-email-helper' , get_stylesheet_directory_uri() . '/js/email_helper.js', array( 'openlab-oneonta-email-helper' ) );
+add_action( 'wp_enqueue_scripts' , 'openlab_oneonta_enqueue_styles' );
+function openlab_oneonta_enqueue_styles() {
+	$parenthandle = 'main-styles';
+	$theme        = wp_get_theme();
+	wp_enqueue_style( $parenthandle,
+		get_template_directory_uri() . '/style.css' ,
+		array(), 
+		$theme->parent() ->get( 'Version' )
+	);
+	wp_enqueue_style( 'openlab-oneonta-style',
+		get_stylesheet_uri(),
+		array( $parenthandle ),
+		$theme->get( 'Version' )
+	);
 }
-);
-?>
 
