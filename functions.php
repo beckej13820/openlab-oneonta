@@ -9,8 +9,8 @@ function openlab_oneonta_enqueue_styles() {
 		array(), 
 		$theme->parent() ->get( 'Version' )
 	);
-	wp_enqueue_style( 'openlab-oneonta-style',
-		get_stylesheet_uri(),
+	wp_enqueue_style( 'openlab-oneonta-style' ,
+		get_stylesheet_uri() . '/style.css' ,
 		array( $parenthandle ),
 		$theme->get( 'Version' )
 	);
