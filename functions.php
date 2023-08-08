@@ -1,6 +1,5 @@
 <?php
 
-add_action( 'wp_enqueue_scripts' , 'openlab_oneonta_enqueue_styles' );
 function openlab_oneonta_enqueue_styles() {
 	$parenthandle = 'main-styles';
 	$theme        = wp_get_theme();
@@ -15,4 +14,4 @@ function openlab_oneonta_enqueue_styles() {
 		$theme->get( 'Version' )
 	);
 }
-
+add_action( 'wp_enqueue_scripts' , 'openlab_oneonta_enqueue_styles' );
