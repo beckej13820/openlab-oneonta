@@ -129,11 +129,9 @@
 				</div><!--.panel-->
 				
 				<div class="panel panel-default">
-					<div class="panel-heading semibold"><?php esc_html_e( 'Account Details', 'commons-in-a-box' ); ?>
-						<p><b>Important:</b> Faculty and Staff must use your firstname.lastname@oneonta.edu email address.</p>	
-					</div>
+					<div class="panel-heading semibold"><?php esc_html_e( 'Account Details', 'commons-in-a-box' ); ?></div>
 					<div class="panel-body">
-
+						<p><b>Important:</b> Faculty and Staff must use your firstname.lastname@oneonta.edu email address.</p>
 						<?php do_action( 'template_notices' ); ?>
 
 						<?php // translators: site name ?>
