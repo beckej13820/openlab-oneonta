@@ -6,7 +6,7 @@ Author URI: https://ed-beck.com
 Template: openlab-theme
 Version: 1.0
 License: GNU General Public License v3 or later
-License URI: https://www.gnu.org/licenses/gpl-3.0.html                 
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
 
 /* Fix text outline on front page slider */
@@ -14,19 +14,9 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 	text-shadow: 2px 2px 2px #000000;
 }
 
-/* important!!! Hide random passwords on register page */
+/* Frontpage fix for overlapping images and text */
 
-#basic-details-section > div.form-group.hide-random-password {
-	display: none; !important
+.home-page .activity-list .activity-wrapper .activity-item .item-avatar {
+	height: auto;
+	padding-top: initial;
 }
-
-/* Disable Account Settings Page to remove password change and email change options */
-#settings-form #email {
-	pointer-events: none;
-	background-color: #eeeeee;
-	opacity: 1;
- }
- 
- #settings-form > div.panel.panel-default > div.panel-body > div.form-group.settings-section.current-pw-section, #settings-form > div.panel.panel-default > div.panel-body > div.form-group.settings-section.change-pw-section, #settings-form > div.submit {
-	display: none;
- }
